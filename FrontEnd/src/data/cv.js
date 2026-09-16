@@ -29,7 +29,7 @@ export const content = {
       error: 'Une erreur est survenue, réessayez plus tard.',
     },
     summary:
-      "Étudiant en 4e session en Techniques de l'informatique au Collège de Maisonneuve, avec plus de 2 ans d'expérience concrète en développement web, e-commerce et marketing numérique via l'exploitation de mon propre commerce en ligne. À la recherche d'un stage ou d'un emploi en TI où appliquer mes compétences techniques et mon autonomie dans un environnement dynamique.",
+      "Étudiant en 4e session en Techniques de l'informatique au Collège de Maisonneuve, avec plus de 2 ans d'expérience concrète en développement web, e-commerce et marketing numérique acquise en gérant le site web et les réseaux sociaux d'un commerce en ligne. À la recherche d'un stage ou d'un emploi en TI où appliquer mes compétences techniques et mon autonomie dans un environnement dynamique.",
     skills: [
       {
         category: 'Développement web',
@@ -60,14 +60,14 @@ export const content = {
     experience: [
       {
         company: 'Eyesight Collectibles',
-        role: 'Fondateur & Gestionnaire web/marketing',
+        role: 'Gestionnaire web & réseaux sociaux',
         period: '04/2024 – Présent',
         location: 'eyesightcollectibles.com',
         bullets: [
           'Développe et maintiens un site e-commerce WordPress (thèmes, plugins, mises à jour, sécurité)',
-          'Gère un catalogue de [X] produits : ajout, descriptions optimisées SEO, catégorisation et inventaire',
+          'Gère un catalogue de produits diversifié : ajout, descriptions optimisées SEO, catégorisation et inventaire',
           "Conçois l'interface (UI) et optimise l'expérience utilisateur pour améliorer le taux de conversion",
-          'Planifie et exécute les campagnes sur les réseaux sociaux, générant [X] de croissance / [X] ventes',
+          'Planifie et exécute les campagnes sur les réseaux sociaux pour stimuler la croissance et les ventes',
         ],
       },
       {
@@ -137,7 +137,7 @@ export const content = {
       error: 'Something went wrong, please try again later.',
     },
     summary:
-      "Fourth-semester Computer Science Technology student at Collège de Maisonneuve, with over 2 years of hands-on experience in web development, e-commerce, and digital marketing gained from running my own online business. Looking for an internship or entry-level IT role where I can apply my technical skills and autonomy in a dynamic environment.",
+      "Fourth-semester Computer Science Technology student at Collège de Maisonneuve, with over 2 years of hands-on experience in web development, e-commerce, and digital marketing gained from managing the website and social media for an online business. Looking for an internship or entry-level IT role where I can apply my technical skills and autonomy in a dynamic environment.",
     skills: [
       {
         category: 'Web Development',
@@ -168,14 +168,14 @@ export const content = {
     experience: [
       {
         company: 'Eyesight Collectibles',
-        role: 'Founder & Web/Marketing Manager',
+        role: 'Web & Social Media Manager',
         period: '04/2024 – Present',
         location: 'eyesightcollectibles.com',
         bullets: [
           'Build and maintain a WordPress e-commerce site (themes, plugins, updates, security)',
-          'Manage a catalog of [X] products: listings, SEO-optimized descriptions, categorization and inventory',
+          'Manage a diverse product catalog: listings, SEO-optimized descriptions, categorization and inventory',
           'Design the UI and optimize the user experience to improve conversion rate',
-          'Plan and run social media campaigns, driving [X] growth / [X] sales',
+          'Plan and run social media campaigns to drive growth and sales',
         ],
       },
       {
