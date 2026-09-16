@@ -1,19 +1,15 @@
 import Section from './Section'
-import { education } from '../data/cv'
+import { useLanguage } from '../i18n/LanguageContext'
 
 function Education() {
+  const { t } = useLanguage()
   return (
-    <Section title="Formation">
-      {education.map((entry) => (
+    <Section title={t.labels.education}>
+      {t.education.map((entry) => (
         <article key={entry.school} className="education-entry">
-          <div className="job-heading">
-            <h3>{entry.school}</h3>
-            <span className="period">{entry.period}</span>
-          </div>
-          <p className="job-location">
-            {entry.program}
-            {entry.location ? ` — ${entry.location}` : ''}
-          </p>
+          <h3>{entry.school}</h3>
+          <p className="job-location">{entry.program}</p>
+          <p className="period">{entry.period}</p>
         </article>
       ))}
     </Section>

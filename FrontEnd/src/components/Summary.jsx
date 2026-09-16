@@ -1,10 +1,11 @@
 import Section from './Section'
-import { summary } from '../data/cv'
+import { useLanguage } from '../i18n/LanguageContext'
 
 function Summary() {
+  const { t } = useLanguage()
   return (
-    <Section title="Résumé">
-      <p>{summary}</p>
+    <Section title={t.labels.summary}>
+      <p className="summary-text">{t.summary}</p>
     </Section>
   )
 }

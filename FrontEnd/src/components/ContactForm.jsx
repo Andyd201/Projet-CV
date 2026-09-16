@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import Section from './Section'
+import { useLanguage } from '../i18n/LanguageContext'
 
 const initialForm = { name: '', email: '', message: '' }
 
 function ContactForm() {
+  const { t } = useLanguage()
   const [form, setForm] = useState(initialForm)
   const [status, setStatus] = useState('idle') // idle | sending | sent | error
 
@@ -30,9 +32,9 @@ function ContactForm() {
   }
 
   return (
-    <Section title="Me contacter">
+    <Section title={t.labels.contact}>
       <form className="contact-form no-print" onSubmit={handleSubmit}>
-        <label htmlFor="name">Nom</label>
+        <label htmlFor="name">{t.labels.name}</label>
         <input
           id="name"
           name="name"
@@ -42,7 +44,7 @@ function ContactForm() {
           onChange={handleChange}
         />
 
-        <label htmlFor="email">Courriel</label>
+        <label htmlFor="email">{t.labels.email}</label>
         <input
           id="email"
           name="email"
@@ -52,7 +54,7 @@ function ContactForm() {
           onChange={handleChange}
         />
 
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message">{t.labels.message}</label>
         <textarea
           id="message"
           name="message"
@@ -63,14 +65,12 @@ function ContactForm() {
         />
 
         <button type="submit" disabled={status === 'sending'}>
-          {status === 'sending' ? 'Envoi…' : 'Envoyer'}
+          {status === 'sending' ? t.labels.sending : t.labels.send}
         </button>
 
-        {status === 'sent' && <p className="form-status ok">Message envoyé, merci !</p>}
+        {status === 'sent' && <p className="form-status ok">{t.labels.sent}</p>}
         {status === 'error' && (
-          <p className="form-status error">
-            Une erreur est survenue, réessayez plus tard.
-          </p>
+          <p className="form-status error">{t.labels.error}</p>
         )}
       </form>
     </Section>
