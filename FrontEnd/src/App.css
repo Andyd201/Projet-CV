@@ -1,0 +1,192 @@
+.cv-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.cv-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.cv-header h1 {
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+
+.cv-header .title {
+  color: var(--text);
+  font-size: 17px;
+  margin-top: 4px;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.contact-list li:not(:last-child)::after {
+  content: '·';
+  margin-left: 16px;
+  color: var(--border);
+}
+
+.print-button {
+  align-self: flex-start;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.print-button:hover {
+  border-color: var(--accent);
+}
+
+.cv-section {
+  margin-bottom: 32px;
+}
+
+.cv-section h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.skills-group h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.skills-group p {
+  font-size: 14px;
+}
+
+.job,
+.education-entry {
+  margin-bottom: 20px;
+}
+
+.job:last-child,
+.education-entry:last-child {
+  margin-bottom: 0;
+}
+
+.job-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.job-heading h3 {
+  font-size: 16px;
+}
+
+.period {
+  font-size: 14px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.job-location {
+  font-size: 14px;
+  color: var(--text);
+  margin: 2px 0 8px;
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.job li {
+  margin-bottom: 4px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 8px;
+  max-width: 420px;
+}
+
+.contact-form label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.contact-form button {
+  justify-self: start;
+  margin-top: 4px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.form-status {
+  font-size: 14px;
+}
+
+.form-status.ok {
+  color: #16a34a;
+}
+
+.form-status.error {
+  color: #dc2626;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .cv-page {
+    max-width: none;
+    padding: 0;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

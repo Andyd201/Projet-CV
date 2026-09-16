@@ -1,0 +1,17 @@
+{
+  "name": "projet-cv",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "BackEnd/server.js",
+  "scripts": {
+    "start": "node BackEnd/server.js",
+    "build": "npm --prefix FrontEnd run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
