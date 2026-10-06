@@ -107,7 +107,7 @@ export const content = {
         school: 'Collège de Maisonneuve',
         location: 'Montréal',
         program: "DEC, Techniques de l'informatique",
-        period: '2023 – Présent (5e session en cours)',
+        period: '2024 – Présent (5e session en cours)',
       },
     ],
     languages: [
