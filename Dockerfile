@@ -12,10 +12,13 @@ WORKDIR /app
 ENV NODE_ENV=production
 
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm ci --omit=dev && npm cache clean --force
 
 COPY BackEnd/ ./BackEnd/
 COPY --from=frontend-build /app/FrontEnd/dist ./FrontEnd/dist
+
+# [FIX] Ne pas rouler en root dans le conteneur
+USER node
 
 EXPOSE 3001
 CMD ["node", "BackEnd/server.js"]

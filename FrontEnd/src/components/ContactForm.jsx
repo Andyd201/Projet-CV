@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Section from './Section'
 import { useLanguage } from '../i18n/LanguageContext'
 
-const initialForm = { name: '', email: '', message: '' }
+const initialForm = { name: '', email: '', message: '', website: '' }
 
 function ContactForm() {
   const { t } = useLanguage()
@@ -40,6 +40,8 @@ function ContactForm() {
           name="name"
           type="text"
           required
+          maxLength={100}
+          autoComplete="name"
           value={form.name}
           onChange={handleChange}
         />
@@ -50,6 +52,8 @@ function ContactForm() {
           name="email"
           type="email"
           required
+          maxLength={254}
+          autoComplete="email"
           value={form.email}
           onChange={handleChange}
         />
@@ -60,8 +64,21 @@ function ContactForm() {
           name="message"
           rows={4}
           required
+          maxLength={5000}
           value={form.message}
           onChange={handleChange}
+        />
+
+        {/* Honeypot anti-bot : invisible pour les humains, laissé vide */}
+        <input
+          type="text"
+          name="website"
+          value={form.website}
+          onChange={handleChange}
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="hp-field"
         />
 
         <button type="submit" disabled={status === 'sending'}>
