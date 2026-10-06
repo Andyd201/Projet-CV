@@ -215,7 +215,7 @@ export const content = {
         school: 'Collège de Maisonneuve',
         location: 'Montreal',
         program: 'DEC, Computer Science Technology',
-        period: '2023 – Present (5th semester in progress)',
+        period: '2024 – Present (5th semester in progress)',
       },
     ],
     languages: [
