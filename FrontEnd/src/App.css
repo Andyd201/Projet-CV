@@ -234,6 +234,37 @@
   opacity: 0.75;
 }
 
+/* ---------- Sidebar: certifications ---------- */
+
+.cert-entry + .cert-entry {
+  margin-top: 12px;
+}
+
+.cert-entry h3 {
+  font-size: 13.5px;
+  color: var(--sidebar-text-h);
+  font-weight: 600;
+}
+
+.cert-entry .cert-issuer {
+  font-size: 12.5px;
+  margin: 4px 0 2px;
+}
+
+.cert-entry .cert-meta {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.cert-entry a {
+  color: var(--accent-light);
+  text-decoration: none;
+}
+
+.cert-entry a:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Main: experience timeline ---------- */
 
 .timeline {
