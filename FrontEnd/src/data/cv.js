@@ -16,6 +16,8 @@ export const content = {
       skills: 'Compétences',
       experience: 'Expérience',
       education: 'Formation',
+      certifications: 'Certifications',
+      verify: 'Vérifier',
       languages: 'Langues',
       contactInfo: 'Coordonnées',
       contact: 'Me contacter',
@@ -29,7 +31,7 @@ export const content = {
       error: 'Une erreur est survenue, réessayez plus tard.',
     },
     summary:
-      "Étudiant en 4e session en Techniques de l'informatique au Collège de Maisonneuve, avec plus de 2 ans d'expérience concrète en développement web, e-commerce et marketing numérique acquise en gérant le site web et les réseaux sociaux d'un commerce en ligne. À la recherche d'un stage ou d'un emploi en TI où appliquer mes compétences techniques et mon autonomie dans un environnement dynamique.",
+      "Étudiant en 5e session en Techniques de l'informatique au Collège de Maisonneuve, avec plus de 2 ans d'expérience concrète en développement web, e-commerce et marketing numérique acquise en gérant le site web et les réseaux sociaux d'un commerce en ligne. À la recherche d'un stage ou d'un emploi en TI où appliquer mes compétences techniques et mon autonomie dans un environnement dynamique.",
     skills: [
       {
         category: 'Développement web',
@@ -110,6 +112,14 @@ export const content = {
         period: '2024 – Présent (5e session en cours)',
       },
     ],
+    certifications: [
+      {
+        name: 'AI Fundamentals',
+        issuer: 'Google · Coursera',
+        date: 'Octobre 2026',
+        url: 'https://coursera.org/verify/YQ6JCFLQVKPF',
+      },
+    ],
     languages: [
       { name: 'Français', level: 'Natif' },
       { name: 'Anglais', level: 'Fonctionnel' },
@@ -124,6 +134,8 @@ export const content = {
       skills: 'Skills',
       experience: 'Experience',
       education: 'Education',
+      certifications: 'Certifications',
+      verify: 'Verify',
       languages: 'Languages',
       contactInfo: 'Contact',
       contact: 'Contact me',
@@ -137,7 +149,7 @@ export const content = {
       error: 'Something went wrong, please try again later.',
     },
     summary:
-      "Fourth-semester Computer Science Technology student at Collège de Maisonneuve, with over 2 years of hands-on experience in web development, e-commerce, and digital marketing gained from managing the website and social media for an online business. Looking for an internship or entry-level IT role where I can apply my technical skills and autonomy in a dynamic environment.",
+      "Fifth-semester Computer Science Technology student at Collège de Maisonneuve, with over 2 years of hands-on experience in web development, e-commerce, and digital marketing gained from managing the website and social media for an online business. Looking for an internship or entry-level IT role where I can apply my technical skills and autonomy in a dynamic environment.",
     skills: [
       {
         category: 'Web Development',
@@ -216,6 +228,14 @@ export const content = {
         location: 'Montreal',
         program: 'DEC, Computer Science Technology',
         period: '2024 – Present (5th semester in progress)',
+      },
+    ],
+    certifications: [
+      {
+        name: 'AI Fundamentals',
+        issuer: 'Google · Coursera',
+        date: 'October 2026',
+        url: 'https://coursera.org/verify/YQ6JCFLQVKPF',
       },
     ],
     languages: [

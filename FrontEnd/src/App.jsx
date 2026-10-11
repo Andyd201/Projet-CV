@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import Languages from './components/Languages'
+import Certifications from './components/Certifications'
 import ContactForm from './components/ContactForm'
 import Section from './components/Section'
 import { useLanguage } from './i18n/LanguageContext'
@@ -24,6 +25,7 @@ function App() {
           <Skills />
           <Languages />
           <Education />
+          <Certifications />
         </aside>
         <main className="cv-main">
           <Summary />
